@@ -60,6 +60,13 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+
+    /**
+     * 初始化Fragment
+     * @param resId
+     * @param fragments
+     * @param showIndex
+     */
     protected void addFragment(int resId,Fragment[] fragments, int showIndex) {
         FragmentTransaction trx = getSupportFragmentManager().beginTransaction();
         for(int i=0;i<fragments.length;i++){
@@ -79,6 +86,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * 切换Fragment
+     * @param index
+     */
     protected void showFragment(int index) {
         List<Fragment> fragmentList = getSupportFragmentManager().getFragments();
         if (fragmentList == null || fragmentList.size() == 0) {

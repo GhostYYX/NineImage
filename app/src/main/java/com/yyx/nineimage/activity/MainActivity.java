@@ -1,14 +1,13 @@
 package com.yyx.nineimage.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.MenuItem;
-import android.widget.TextView;
 
 import com.yyx.nineimage.R;
 import com.yyx.nineimage.fragment.NineImgFragment;
@@ -30,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
                     showFragment(0);
                     return true;
                 case R.id.navigation_dashboard:
-                    showFragment(1);
+                    startActivity(new Intent(MainActivity.this,PhotoPickersActivity.class));
                     return true;
                 case R.id.navigation_notifications:
                     showFragment(2);

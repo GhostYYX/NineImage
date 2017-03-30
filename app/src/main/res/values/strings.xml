@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">NineImage</string>
     <string name="title_home">Nin</string>
-    <string name="title_dashboard">Dashboard</string>
+    <string name="title_dashboard">图片选择器</string>
     <string name="title_notifications">Notifications</string>
 
     <string name="photos_num">%1$d张</string>

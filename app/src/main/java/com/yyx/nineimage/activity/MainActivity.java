@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(new Intent(MainActivity.this,PhotoPickersActivity.class));
                     return true;
                 case R.id.navigation_notifications:
-                    showFragment(2);
+                    startActivity(new Intent(MainActivity.this,PPTActivity.class));
                     return true;
             }
             return false;

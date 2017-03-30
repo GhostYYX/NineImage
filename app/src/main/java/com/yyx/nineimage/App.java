@@ -15,12 +15,20 @@ import com.lzy.ninegrid.NineGridView;
 
 public class App extends Application {
 
+    private static Context context;
+
     @Override
     public void onCreate() {
         super.onCreate();
         initNineGridView();
+        context = this.getApplicationContext();
 
     }
+
+    public static Context getContext() {
+        return context;
+    }
+
 
     public void initNineGridView(){
         NineGridView.setImageLoader(new PicassoImageLoader());

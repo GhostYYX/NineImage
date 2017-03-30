@@ -77,7 +77,7 @@ public class PhotoPickersActivity extends Activity {
                     maxNum = Integer.valueOf(mRequestNum.getText().toString());
                 }
 
-                Intent intent = new Intent(PhotoPickersActivity.this, PhotoPickersActivity.class);
+                Intent intent = new Intent(PhotoPickersActivity.this, PhotoPickerActivity.class);
                 intent.putExtra(PhotoPickerActivity.EXTRA_SHOW_CAMERA, showCamera);
                 intent.putExtra(PhotoPickerActivity.EXTRA_SELECT_MODE, selectedMode);
                 intent.putExtra(PhotoPickerActivity.EXTRA_MAX_MUN, maxNum);

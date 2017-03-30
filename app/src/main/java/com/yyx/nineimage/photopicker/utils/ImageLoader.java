@@ -10,7 +10,7 @@ import android.text.TextUtils;
 import android.util.LruCache;
 import android.widget.ImageView;
 
-import com.yyx.nineimage.photopicker.Application;
+import com.yyx.nineimage.App;
 import com.yyx.nineimage.photopicker.io.DiskLruCache;
 
 import java.io.File;
@@ -141,11 +141,11 @@ public class ImageLoader {
      */
     private void initDiskCache() {
         try {
-            File cacheDir = OtherUtils.getDiskCacheDir(Application.getContext(), "images");
+            File cacheDir = OtherUtils.getDiskCacheDir(App.getContext(), "images");
             if (!cacheDir.exists()) {
                 cacheDir.mkdirs();
             }
-            mDiskLruCache = DiskLruCache.open(cacheDir, OtherUtils.getAppVersion(Application.getContext()),
+            mDiskLruCache = DiskLruCache.open(cacheDir, OtherUtils.getAppVersion(App.getContext()),
                     1, 15 * 1024 * 1024);
         } catch (IOException e) {
             e.printStackTrace();

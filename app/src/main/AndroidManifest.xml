@@ -25,7 +25,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.PhotoPickersActivity" />
-        <activity android:name=".photopicker.PhotoPickerActivity"/>
+        <activity
+            android:name=".photopicker.PhotoPickerActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
